@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <the-navbar></the-navbar>
-    <router-view/>
+    <transition name="fade">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -15,22 +17,24 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
 body {
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background: #2c3e50;
+  color: #fff;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  background: #2c3e50;
 }
 
-.nflogo {
-  fill: #e50914;
-  line-height: normal;
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 #nav {
