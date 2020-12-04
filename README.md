@@ -1,4 +1,4 @@
-# netflix
+# Scratchflix
 
 ## Project setup
 ```
