@@ -17,6 +17,11 @@
   color: #2c3e50;
 }
 
+.nflogo {
+  fill: #e50914;
+  line-height: normal;
+}
+
 #nav {
   padding: 30px;
 
