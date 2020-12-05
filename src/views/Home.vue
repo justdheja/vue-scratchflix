@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+img {
+  display: block;
+  margin: 12px auto;
+}
+</style>

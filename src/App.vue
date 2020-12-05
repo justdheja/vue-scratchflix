@@ -12,7 +12,11 @@ import TheNavbar from './components/TheNavbar'
 export default {
   components: {
     TheNavbar
-  }
+  },
+
+  created() {
+    console.log(this.$apiKey)
+  },
 }
 </script>
 
