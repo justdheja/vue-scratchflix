@@ -2,17 +2,18 @@
   <div class="home">
     <div class="container">
       <img alt="Vue logo" src="../assets/logo.png">
+      <trending-movies></trending-movies>
     </div>
   </div>
 </template>
 
 <script>
-
+import TrendingMovies from '../components/Home/TrendingMovies'
 
 export default {
   name: 'Home',
   components: {
-    
+    TrendingMovies
   },
   created() {
     
